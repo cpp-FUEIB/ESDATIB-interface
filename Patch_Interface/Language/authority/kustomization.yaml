@@ -56,6 +56,9 @@ configMapGenerator:
   - name: participant-utility-i18n-eui
     files:
       - en.json=json/simpl-fe-onboarding/participant-utility/en.json
+  - name: simpl-logo
+    files:
+      - simpl-logo.svg=../../Logos/simpl-logo.svg
 
 # Patch del Deployment existente (solo volumenes y mounts)
 resources:
