@@ -1,7 +1,7 @@
 apiVersion: apps/v1
-kind: configMap
+kind: Deployment
 metadata:
-  name: simpl-fe-onboarding
+  name: patch-simpl-fe-onboarding
   namespace: authority01
 spec:
   template:
