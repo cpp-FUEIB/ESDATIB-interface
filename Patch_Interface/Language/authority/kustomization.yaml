@@ -5,8 +5,8 @@ namespace: authority01
 
 # Referencias a los kustomizations separados
 resources:
-  - json-kustomization.yaml
-  - logos-kustomization.yaml
+  - json-config
+  - logos-config
   - patches/patch-simpl-fe-onboarding.yaml
   - patches/patch-simpl-fe-participant.yaml
   - patches/patch-simpl-fe-sap.yaml
