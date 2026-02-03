@@ -7,6 +7,7 @@ spec:
   template:
     spec:
       volumes:
+          # ===== JSON i18n Volumes =====
           - name: usersroles-onboarding-i18n
             configMap:
               name: usersroles-onboarding-i18n
@@ -55,11 +56,13 @@ spec:
           - name: usersroles-participant-utility-i18n-eui
             configMap:
               name: usersroles-participant-utility-i18n-eui
+          # ===== Logo Volume =====
           - name: simpl-logo
             configMap:
               name: simpl-logo
       containers:
         - name: simpl-fe-usersroles
+          # ===== JSON i18n Mounts =====
           volumeMounts:
               - name: usersroles-onboarding-i18n
                 mountPath: /usr/share/nginx/html/onboarding/assets/i18n/en.json
@@ -107,6 +110,7 @@ spec:
                 mountPath: /usr/share/nginx/html/participant-utility/assets/i18n-ecl/en.json
                 subPath: en.json
               - name: usersroles-participant-utility-i18n-eui
+              # ===== Logo Mount =====
                 mountPath: /usr/share/nginx/html/participant-utility/assets/i18n-eui/en.json
                 subPath: en.json
               - name: simpl-logo
