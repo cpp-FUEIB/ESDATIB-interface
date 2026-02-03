@@ -1,131 +1,131 @@
 {
     "common" : {
-      "yes": "Yes",
+      "yes": "Sí",
       "no": "No",
-      "signout": "Sign out",
-      "actionCompleted" : "Action Completed",
-      "actionFailed" : "Action Failed",
+      "signout": "Tanca sessió",
+      "actionCompleted" : "Acció completada",
+      "actionFailed" : "Acció fallida",
       "forms": {
         "errors" : {
-          "required": "The field is required and cannot be empty."
+          "required": "El camp és obligatori i no pot estar buit."
         }
       }
     },
     "participantType": {
-        "title": "Participant types",
-        "applicationProvider": "Application provider",
-        "dataProvider": "Data provider",
-        "infrastructureProvider": "Infrastructure provider",
-        "consumer": "Consumer",
-        "id": "Id",
-        "name": "Name",
-        "userEmail": "Email",
-        "participantType": "Type",
-        "organization": "Organization",
-        "status": "Status",
-        "outcomeUserEmail": "Outcome User",
-        "description": "Description",
-        "assignableToRoles": "Assignable",
-        "enabled": "Enabled",
-        "creationTimestamp": "Creation",
-        "updateTimestamp": "Update",
-        "addAttribute": "Add Attribute",
-        "deleteSuccess": "You successfully deleted an attribute from the participant type",
-        "addSuccess": "You successfully added some attributes to the participant type",
-        "confirmDeletionMessage": "Confirm deletion of {{code}} from selected participant type",
-        "code": "Code",
-        "management": "Participant Types Management"
+      "title": "Tipus de participants",
+      "applicationProvider": "Proveïdor d'aplicacions",
+      "dataProvider": "Proveïdor de dades",
+      "infrastructureProvider": "Proveïdor d'infraestructura",
+      "consumer": "Consumidor",
+      "id": "Id",
+      "name": "Nom",
+      "userEmail": "Correu electrònic",
+      "participantType": "Tipus",
+      "organization": "Organització",
+      "status": "Estat",
+      "outcomeUserEmail": "Usuari de resultat",
+      "description": "Descripció",
+      "assignableToRoles": "Assignable",
+      "enabled": "Habilitat",
+      "creationTimestamp": "Creació",
+      "updateTimestamp": "Actualització",
+      "addAttribute": "Afegeix atribut",
+      "deleteSuccess": "Has eliminat correctament un atribut del tipus de participant",
+      "addSuccess": "Has afegit correctament alguns atributs al tipus de participant",
+      "confirmDeletionMessage": "Confirma l'eliminació de {{code}} del tipus de participant seleccionat",
+      "code": "Codi",
+      "management": "Gestió de tipus de participants"
     },
     "applicationProvider": {
-      "title": "Application provider"
+      "title": "Proveïdor d'aplicacions"
     },
     "dataProvider": {
-      "title": "Data provider"
+      "title": "Proveïdor de dades"
     },
     "infrastructureProvider": {
-      "title": "Infrastructure provider"
+      "title": "Proveïdor d'infraestructura"
     },
     "consumer": {
-      "title": "Consumer"
+      "title": "Consumidor"
     },
     "identityAttributesManagementPage": {
-        "title": "Attributes list",
-        "name": "Name",
-        "code": "Code",
-        "builtIn": "Built in",
-        "identifier": "Identifier",
-        "inUse": "In use",
-        "assignableToRoles": "Assignable to Roles",
-        "enabled": "Enabled",
-        "creationTimestamp": "Creation date",
-        "updateTimestamp": "Last change date",
-        "newAttribute": "New Attribute",
-        "confirmDeletionMessage": "Confirm deletion of {{code}}",
-        "deleteSuccess": "You successfully deleted an attribute"
+      "title": "Llista d'atributs",
+      "name": "Nom",
+      "code": "Codi",
+      "builtIn": "Integrat",
+      "identifier": "Identificador",
+      "inUse": "En ús",
+      "assignableToRoles": "Assignable als rols",
+      "enabled": "Habilitat",
+      "creationTimestamp": "Data de creació",
+      "updateTimestamp": "Data de darrera modificació",
+      "newAttribute": "Nou atribut",
+      "confirmDeletionMessage": "Confirma l'eliminació de {{code}}",
+      "deleteSuccess": "Has eliminat correctament un atribut"
     },
     "identityAttributesDetail": {
-        "title": "Identity attributes details",
-        "edit": "Edit Attribute",
-        "code": "Code",
-        "identifier": "Identifier",
-        "name": "Name",
-        "inUse": "In use",
-        "assignable": "Assignable to roles",
-        "date": "Creation date",
-        "lastDate": "Last change date",
-        "enabled": "Enabled",
-        "makeAssignable": "Make assignable",
-        "makeUnAssignable": "Make unassignable",
-        "editSuccess": "You successfully edited an attribute"
+      "title": "Detalls dels atributs d'identitat",
+      "edit": "Edita atribut",
+      "code": "Codi",
+      "identifier": "Identificador",
+      "name": "Nom",
+      "inUse": "En ús",
+      "assignable": "Assignable als rols",
+      "date": "Data de creació",
+      "lastDate": "Data de darrera modificació",
+      "enabled": "Habilitat",
+      "makeAssignable": "Fes assignable",
+      "makeUnAssignable": "Fes no assignable",
+      "editSuccess": "Has editat correctament un atribut"
     },
     "identityAttributesCreate": {
-        "title": "New attribute",
-        "createSuccess": "You successfully created an attribute"
+      "title": "Nou atribut",
+      "createSuccess": "Has creat correctament un atribut"
     },
     "simpleInput": {
-        "save": "Save",
-        "cancel": "Cancel",
-        "delete": "Delete",
-        "edit": "Edit",
-        "actions": "Actions",
-        "confirmDeletion": "Confirm deletion",
-        "add": "Add"
+      "save": "Desa",
+      "cancel": "Cancel·la",
+      "delete": "Elimina",
+      "edit": "Edita",
+      "actions": "Accions",
+      "confirmDeletion": "Confirma l'eliminació",
+      "add": "Afegeix"
     },
     "filters": {
-        "title": "Filter",
-        "titlePlural": "Filters",
-        "selectColumn": "Select column",
-        "reset": "Reset",
-        "apply": "Apply",
-        "name": "Name",
-        "code": "Code",
-        "builtIn": "Built in",
+        "title": "Filtre",
+        "titlePlural": "Filtres",
+        "selectColumn": "Selecciona columna",
+        "reset": "Reinicia",
+        "apply": "Aplica",
+        "name": "Nom",
+        "code": "Codi",
+        "builtIn": "Integrat",
         "placeholder": {
-          "name": "Type a name",
-          "code": "Type a code",
-          "builtIn": "Is built in?"
+          "name": "Escriu un nom",
+          "code": "Escriu un codi",
+          "builtIn": "Està integrat?"
         }
     },
   "landing-pages": {
     "unauthorized": {
-      "title": "Role Restricted Access",
-      "message": "Access denied. Your role does not grant permission to view this content."
+      "title": "Accés restringit per rol",
+      "message": "Accés denegat. El teu rol no et permet veure aquest contingut."
     },
     "error-page": {
       "title": "Error",
       "message": {
-        "400": "Your request could not be understood by the server due to malformed syntax or invalid parameters. Please check the data you submitted.",
-        "401": "You are not authorized to access this resource. Please ensure you are logged in with the correct credentials.",
-        "403": "You do not have permission to access this resource. Check your access privileges.",
-        "404": "The resource you are looking for could not be found on the server. Please verify the URL or contact support.",
-        "500": "The server encountered an internal error and was unable to complete your request. Please try again later.",
-        "501": "The server does not support the functionality required to fulfill the request.",
-        "502": "The server, acting as a gateway, received an invalid response from the upstream server.",
-        "503": "The server is currently unavailable due to overload or maintenance. Please try again later.",
-        "504": "The server, acting as a gateway, did not receive a timely response from the upstream server.",
-        "505": "The server does not support the HTTP protocol version used in the request.",
-        "508": "The server detected an infinite loop while processing the request.",
-        "511": "The client must authenticate to gain network access."
+        "400": "La teva sol·licitud no s'ha pogut entendre pel servidor a causa d'una sintaxi incorrecta o paràmetres invàlids. Si us plau, revisa les dades enviades.",
+        "401": "No estàs autoritzat a accedir a aquest recurs. Assegura't d'estar identificat amb les credencials correctes.",
+        "403": "No tens permís per accedir a aquest recurs. Revisa els teus privilegis d'accés.",
+        "404": "El recurs que busques no s'ha trobat al servidor. Verifica la URL o contacta amb el suport.",
+        "500": "El servidor ha trobat un error intern i no ha pogut completar la teva sol·licitud. Torna-ho a intentar més tard.",
+        "501": "El servidor no suporta la funcionalitat requerida per completar la sol·licitud.",
+        "502": "El servidor, actuant com a passarel·la, ha rebut una resposta invàlida del servidor d'origen.",
+        "503": "El servidor no està disponible actualment per sobrecàrrega o manteniment. Torna-ho a intentar més tard.",
+        "504": "El servidor, actuant com a passarel·la, no ha rebut una resposta a temps del servidor d'origen.",
+        "505": "El servidor no suporta la versió del protocol HTTP utilitzada en la sol·licitud.",
+        "508": "El servidor ha detectat un bucle infinit mentre processava la sol·licitud.",
+        "511": "El client ha d'autenticar-se per obtenir accés a la xarxa."
       }
     }
   }
