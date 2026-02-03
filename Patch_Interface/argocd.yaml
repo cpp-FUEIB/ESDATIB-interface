@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/cpacheco-perello/ESDATIB.git
+    repoURL: https://github.com/cpp-FUEIB/ESDATIB-interface
     path: Patch_Interface/Language/authority
     targetRevision: main
   destination:
