@@ -85,22 +85,22 @@ spec:
           volumeMounts:
             # ===== CSS Mounts (todos los submódulos) =====
             - name: simpl-fe-css-onboarding
-              mountPath: /usr/share/nginx/html/onboarding/assets/styles/styles.css
+              mountPath: /usr/share/nginx/html/onboarding/styles.89583e0616aa3a16.css
               subPath: styles.css
             - name: simpl-fe-css-simpl-shell
-              mountPath: /usr/share/nginx/html/simpl-shell/assets/styles/styles.css
+              mountPath: /usr/share/nginx/html/simpl-shell/styles.7cfb3136cfd0d2d9.css
               subPath: styles.css
             - name: simpl-fe-css-sap
-              mountPath: /usr/share/nginx/html/sap/assets/styles/styles.css
+              mountPath: /usr/share/nginx/html/sap/styles.896d4367e1c5e040.css
               subPath: styles.css
             - name: simpl-fe-css-identity-provider
-              mountPath: /usr/share/nginx/html/identity-provider/assets/styles/styles.css
+              mountPath: /usr/share/nginx/html/identity-provider/styles.896d4367e1c5e040.css
               subPath: styles.css
             - name: simpl-fe-css-usersandroles
-              mountPath: /usr/share/nginx/html/usersandroles/assets/styles/styles.css
+              mountPath: /usr/share/nginx/html/usersandroles/styles.a198e9b8e4401c04.css
               subPath: styles.css
             - name: simpl-fe-css-participant-utility
-              mountPath: /usr/share/nginx/html/participant-utility/assets/styles/styles.css
+              mountPath: /usr/share/nginx/html/participant-utility/styles.a198e9b8e4401c04.css
               subPath: styles.css
             # ===== JSON i18n Mounts =====
             - name: usersroles-onboarding-i18n
