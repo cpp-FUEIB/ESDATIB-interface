@@ -1,0 +1,127 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: simpl-fe-usersroles
+  namespace: consumer01
+spec:
+  template:
+    spec:
+      volumes:
+        - name: consumer-usersroles-onboarding-i18n
+          configMap:
+            name: consumer-usersroles-onboarding-i18n
+        - name: consumer-usersroles-onboarding-i18n-ecl
+          configMap:
+            name: consumer-usersroles-onboarding-i18n-ecl
+        - name: consumer-usersroles-onboarding-i18n-eui
+          configMap:
+            name: consumer-usersroles-onboarding-i18n-eui
+        - name: consumer-usersroles-simpl-shell-i18n
+          configMap:
+            name: consumer-usersroles-simpl-shell-i18n
+        - name: consumer-usersroles-sap-i18n
+          configMap:
+            name: consumer-usersroles-sap-i18n
+        - name: consumer-usersroles-sap-i18n-ecl
+          configMap:
+            name: consumer-usersroles-sap-i18n-ecl
+        - name: consumer-usersroles-sap-i18n-eui
+          configMap:
+            name: consumer-usersroles-sap-i18n-eui
+        - name: consumer-usersroles-identity-provider-i18n
+          configMap:
+            name: consumer-usersroles-identity-provider-i18n
+        - name: consumer-usersroles-identity-provider-i18n-ecl
+          configMap:
+            name: consumer-usersroles-identity-provider-i18n-ecl
+        - name: consumer-usersroles-identity-provider-i18n-eui
+          configMap:
+            name: consumer-usersroles-identity-provider-i18n-eui
+        - name: consumer-usersroles-usersandroles-i18n
+          configMap:
+            name: consumer-usersroles-usersandroles-i18n
+        - name: consumer-usersroles-usersandroles-i18n-ecl
+          configMap:
+            name: consumer-usersroles-usersandroles-i18n-ecl
+        - name: consumer-usersroles-usersandroles-i18n-eui
+          configMap:
+            name: consumer-usersroles-usersandroles-i18n-eui
+        - name: consumer-usersroles-participant-utility-i18n
+          configMap:
+            name: consumer-usersroles-participant-utility-i18n
+        - name: consumer-usersroles-participant-utility-i18n-ecl
+          configMap:
+            name: consumer-usersroles-participant-utility-i18n-ecl
+        - name: consumer-usersroles-participant-utility-i18n-eui
+          configMap:
+            name: consumer-usersroles-participant-utility-i18n-eui
+      containers:
+        - name: simpl-fe-usersroles
+          volumeMounts:
+            - name: consumer-usersroles-onboarding-i18n
+              mountPath: /usr/share/nginx/html/onboarding/assets/i18n/en.json
+              subPath: en.json
+            - name: consumer-usersroles-onboarding-i18n-ecl
+              mountPath: /usr/share/nginx/html/onboarding/assets/i18n-ecl/en.json
+              subPath: en.json
+            - name: consumer-usersroles-onboarding-i18n-eui
+              mountPath: /usr/share/nginx/html/onboarding/assets/i18n-eui/en.json
+              subPath: en.json
+            - name: consumer-usersroles-simpl-shell-i18n
+              mountPath: /usr/share/nginx/html/simpl-shell/assets/i18n/en.json
+              subPath: en.json
+            - name: consumer-usersroles-sap-i18n
+              mountPath: /usr/share/nginx/html/sap/assets/i18n/en.json
+              subPath: en.json
+            - name: consumer-usersroles-sap-i18n-ecl
+              mountPath: /usr/share/nginx/html/sap/assets/i18n-ecl/en.json
+              subPath: en.json
+            - name: consumer-usersroles-sap-i18n-eui
+              mountPath: /usr/share/nginx/html/sap/assets/i18n-eui/en.json
+              subPath: en.json
+            - name: consumer-usersroles-identity-provider-i18n
+              mountPath: /usr/share/nginx/html/identity-provider/assets/i18n/en.json
+              subPath: en.json
+            - name: consumer-usersroles-identity-provider-i18n-ecl
+              mountPath: /usr/share/nginx/html/identity-provider/assets/i18n-ecl/en.json
+              subPath: en.json
+            - name: consumer-usersroles-identity-provider-i18n-eui
+              mountPath: /usr/share/nginx/html/identity-provider/assets/i18n-eui/en.json
+              subPath: en.json
+            - name: consumer-usersroles-usersandroles-i18n
+              mountPath: /usr/share/nginx/html/usersandroles/assets/i18n/en.json
+              subPath: en.json
+            - name: consumer-usersroles-usersandroles-i18n-ecl
+              mountPath: /usr/share/nginx/html/usersandroles/assets/i18n-ecl/en.json
+              subPath: en.json
+            - name: consumer-usersroles-usersandroles-i18n-eui
+              mountPath: /usr/share/nginx/html/usersandroles/assets/i18n-eui/en.json
+              subPath: en.json
+            - name: consumer-usersroles-participant-utility-i18n
+              mountPath: /usr/share/nginx/html/participant-utility/assets/i18n/en.json
+              subPath: en.json
+            - name: consumer-usersroles-participant-utility-i18n-ecl
+              mountPath: /usr/share/nginx/html/participant-utility/assets/i18n-ecl/en.json
+              subPath: en.json
+            - name: consumer-usersroles-participant-utility-i18n-eui
+              mountPath: /usr/share/nginx/html/participant-utility/assets/i18n-eui/en.json
+              subPath: en.json
+            # ===== Logo Mount =====
+            - name: consumer-simpl-logo
+              mountPath: /usr/share/nginx/html/onboarding/assets/images/logo/simpl-logo.svg
+              subPath: simpl-logo.svg
+            - name: consumer-simpl-logo
+              mountPath: /usr/share/nginx/html/simpl-shell/assets/images/logo/simpl-logo.svg
+              subPath: simpl-logo.svg
+            - name: consumer-simpl-logo
+              mountPath: /usr/share/nginx/html/sap/assets/images/logo/simpl-logo.svg
+              subPath: simpl-logo.svg
+            - name: consumer-simpl-logo
+              mountPath: /usr/share/nginx/html/identity-provider/assets/images/logo/simpl-logo.svg
+              subPath: simpl-logo.svg
+            - name: consumer-simpl-logo
+              mountPath: /usr/share/nginx/html/usersandroles/assets/images/logo/simpl-logo.svg
+              subPath: simpl-logo.svg
+            - name: consumer-simpl-logo
+              mountPath: /usr/share/nginx/html/participant-utility/assets/images/logo/simpl-logo.svg
+              subPath: simpl-logo.svg

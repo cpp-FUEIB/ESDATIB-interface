@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: catalogue-ui
+  namespace: consumer01
+spec:
+  template:
+    spec:
+      volumes:
+        - name: consumer-catalogue-ui-i18n
+          configMap:
+            name: consumer-catalogue-ui-i18n
+      containers:
+        - name: catalogue-ui
+          volumeMounts:
+            - name: consumer-catalogue-ui-i18n
+              mountPath: /app/node_modules/yargs/locales/en.json
+              subPath: en.json

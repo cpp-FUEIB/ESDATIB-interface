@@ -1,7 +1,8 @@
-for pod in $(kubectl get pods -n authority01 -o jsonpath='{.items[*].metadata.name}'); do
+for pod in $(kubectl get pods -n consumer01 -o jsonpath='{.items[*].metadata.name}'); do
   echo "🔍 Pod: $pod"
-  kubectl exec -n authority01 $pod -- find / -name "*.css" 2>/dev/null
-done
+  kubectl exec -n consumer01 "$pod" -- find / -name "*.json" 2>/dev/null
+done | tee resultados_json.txt
 
 
-kubectl exec -n authority01 simpl-fe-onboarding-9d457d559-rc6wk -- cat /usr/share/nginx/html/usersandroles/styles.a198e9b8e4401c04.css
+
+kubectl exec -n consumer01 catalogue-ui-cfb6c5464-hx45h -- cat /app/node_modules/yargs/locales/en.json

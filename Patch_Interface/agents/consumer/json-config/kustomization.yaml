@@ -1,0 +1,113 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: consumer01
+generatorOptions:
+  disableNameSuffixHash: true
+
+# ConfigMaps separados para cada ruta
+# ConfigMaps para catalogue-ui
+configMapGenerator:
+  - name: consumer-catalogue-ui-i18n
+    files:
+      - en.json=json/catalogue-ui/en.json
+
+# ConfigMaps para simpl-fe-participant
+  - name: consumer-participant-onboarding-i18n
+    files:
+      - en.json=json/simpl-fe-participant/onboarding/en.json
+  - name: consumer-participant-onboarding-i18n-ecl
+    files:
+      - en.json=json/simpl-fe-participant/onboarding/en.json
+  - name: consumer-participant-onboarding-i18n-eui
+    files:
+      - en.json=json/simpl-fe-participant/onboarding/en.json
+  - name: consumer-participant-simpl-shell-i18n
+    files:
+      - en.json=json/simpl-fe-participant/simpl-shell/en.json
+  - name: consumer-participant-sap-i18n
+    files:
+      - en.json=json/simpl-fe-participant/sap/en.json
+  - name: consumer-participant-sap-i18n-ecl
+    files:
+      - en.json=json/simpl-fe-participant/sap/en.json
+  - name: consumer-participant-sap-i18n-eui
+    files:
+      - en.json=json/simpl-fe-participant/sap/en.json
+  - name: consumer-participant-identity-provider-i18n
+    files:
+      - en.json=json/simpl-fe-participant/identity-provider/en.json
+  - name: consumer-participant-identity-provider-i18n-ecl
+    files:
+      - en.json=json/simpl-fe-participant/identity-provider/en.json
+  - name: consumer-participant-identity-provider-i18n-eui
+    files:
+      - en.json=json/simpl-fe-participant/identity-provider/en.json
+  - name: consumer-participant-usersandroles-i18n
+    files:
+      - en.json=json/simpl-fe-participant/usersandroles/en.json
+  - name: consumer-participant-usersandroles-i18n-ecl
+    files:
+      - en.json=json/simpl-fe-participant/usersandroles/en.json
+  - name: consumer-participant-usersandroles-i18n-eui
+    files:
+      - en.json=json/simpl-fe-participant/usersandroles/en.json
+  - name: consumer-participant-participant-utility-i18n
+    files:
+      - en.json=json/simpl-fe-participant/participant-utility/en.json
+  - name: consumer-participant-participant-utility-i18n-ecl
+    files:
+      - en.json=json/simpl-fe-participant/participant-utility/en.json
+  - name: consumer-participant-participant-utility-i18n-eui
+    files:
+      - en.json=json/simpl-fe-participant/participant-utility/en.json
+
+# ConfigMaps para simpl-fe-usersroles
+  - name: consumer-usersroles-onboarding-i18n
+    files:
+      - en.json=json/simpl-fe-usersroles/onboarding/en.json
+  - name: consumer-usersroles-onboarding-i18n-ecl
+    files:
+      - en.json=json/simpl-fe-usersroles/onboarding/en.json
+  - name: consumer-usersroles-onboarding-i18n-eui
+    files:
+      - en.json=json/simpl-fe-usersroles/onboarding/en.json
+  - name: consumer-usersroles-simpl-shell-i18n
+    files:
+      - en.json=json/simpl-fe-usersroles/simpl-shell/en.json
+  - name: consumer-usersroles-sap-i18n
+    files:
+      - en.json=json/simpl-fe-usersroles/sap/en.json
+  - name: consumer-usersroles-sap-i18n-ecl
+    files:
+      - en.json=json/simpl-fe-usersroles/sap/en.json
+  - name: consumer-usersroles-sap-i18n-eui
+    files:
+      - en.json=json/simpl-fe-usersroles/sap/en.json
+  - name: consumer-usersroles-identity-provider-i18n
+    files:
+      - en.json=json/simpl-fe-usersroles/identity-provider/en.json
+  - name: consumer-usersroles-identity-provider-i18n-ecl
+    files:
+      - en.json=json/simpl-fe-usersroles/identity-provider/en.json
+  - name: consumer-usersroles-identity-provider-i18n-eui
+    files:
+      - en.json=json/simpl-fe-usersroles/identity-provider/en.json
+  - name: consumer-usersroles-usersandroles-i18n
+    files:
+      - en.json=json/simpl-fe-usersroles/usersandroles/en.json
+  - name: consumer-usersroles-usersandroles-i18n-ecl
+    files:
+      - en.json=json/simpl-fe-usersroles/usersandroles/en.json
+  - name: consumer-usersroles-usersandroles-i18n-eui
+    files:
+      - en.json=json/simpl-fe-usersroles/usersandroles/en.json
+  - name: consumer-usersroles-participant-utility-i18n
+    files:
+      - en.json=json/simpl-fe-usersroles/participant-utility/en.json
+  - name: consumer-usersroles-participant-utility-i18n-ecl
+    files:
+      - en.json=json/simpl-fe-usersroles/participant-utility/en.json
+  - name: consumer-usersroles-participant-utility-i18n-eui
+    files:
+      - en.json=json/simpl-fe-usersroles/participant-utility/en.json

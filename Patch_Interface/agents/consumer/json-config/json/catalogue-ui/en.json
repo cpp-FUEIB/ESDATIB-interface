@@ -1,0 +1,55 @@
+{
+  "Commands:": "Ordres:",
+  "Options:": "Opcions:",
+  "Examples:": "Exemples:",
+  "boolean": "booleà",
+  "count": "recompte",
+  "string": "cadena",
+  "number": "nombre",
+  "array": "matriu",
+  "required": "obligatori",
+  "default": "per defecte",
+  "default:": "per defecte:",
+  "choices:": "opcions:",
+  "aliases:": "alias:",
+  "generated-value": "valor-generada",
+  "Not enough non-option arguments: got %s, need at least %s": {
+    "one": "No hi ha prou arguments no-opcionals: rebut %s, calen almenys %s",
+    "other": "No hi ha prou arguments no-opcionals: rebut %s, calen almenys %s"
+  },
+  "Too many non-option arguments: got %s, maximum of %s": {
+    "one": "Massa arguments no-opcionals: rebut %s, màxim de %s",
+    "other": "Massa arguments no-opcionals: rebut %s, màxim de %s"
+  },
+  "Missing argument value: %s": {
+    "one": "Falta el valor de l'argument: %s",
+    "other": "Falten els valors dels arguments: %s"
+  },
+  "Missing required argument: %s": {
+    "one": "Falta l'argument obligatori: %s",
+    "other": "Falten els arguments obligatoris: %s"
+  },
+  "Unknown argument: %s": {
+    "one": "Argument desconegut: %s",
+    "other": "Arguments desconeguts: %s"
+  },
+  "Unknown command: %s": {
+    "one": "Ordre desconeguda: %s",
+    "other": "Ordres desconegudes: %s"
+  },
+  "Invalid values:": "Valors no vàlids:",
+  "Argument: %s, Given: %s, Choices: %s": "Argument: %s, Donat: %s, Opcions: %s",
+  "Argument check failed: %s": "La comprovació de l'argument ha fallat: %s",
+  "Implications failed:": "Falten arguments dependents:",
+  "Not enough arguments following: %s": "No hi ha prou arguments següent: %s",
+  "Invalid JSON config file: %s": "Fitxer de configuració JSON no vàlid: %s",
+  "Path to JSON config file": "Camí al fitxer de configuració JSON",
+  "Show help": "Mostra l'ajuda",
+  "Show version number": "Mostra el número de versió",
+  "Did you mean %s?": "Volies dir %s?",
+  "Arguments %s and %s are mutually exclusive" : "Els arguments %s i %s s'exclouen mútuament",
+  "Positionals:": "Posicionals:",
+  "command": "ordre",
+  "deprecated": "deprecat",
+  "deprecated: %s": "deprecat: %s"
+}
