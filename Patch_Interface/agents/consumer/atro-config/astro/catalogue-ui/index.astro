@@ -6,7 +6,7 @@ import SearchTabs from '../components/search/SearchTabs.vue';
 const search = Astro.url.searchParams.get('search') || '';
 ---
 
-<Layout title="Busca en el catalogo federado">
-  <PageHeader title="Busca en el catalogo federado" />
+<Layout title="Cerca al catàleg ESDATIB">
+  <PageHeader title="Cerca al catàleg ESDATIB" />
   <SearchTabs client:only="vue" search={search} />
 </Layout>
