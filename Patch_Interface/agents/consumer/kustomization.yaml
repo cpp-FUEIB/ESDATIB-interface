@@ -6,6 +6,7 @@ namespace: consumer01
 # Referencias a los kustomizations separados
 resources:
   - json-config
+  - atro-config
   - patches/patch-catalogue-ui.yaml
   - patches/patch-simpl-fe-participant.yaml
   - patches/patch-simpl-fe-usersroles.yaml

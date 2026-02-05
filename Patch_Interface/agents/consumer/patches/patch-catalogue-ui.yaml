@@ -10,9 +10,18 @@ spec:
         - name: consumer-catalogue-ui-i18n
           configMap:
             name: consumer-catalogue-ui-i18n
+        - name: consumer-catalogue-ui-astro
+          configMap:
+            name: consumer-catalogue-ui-astro
       containers:
         - name: catalogue-ui
           volumeMounts:
             - name: consumer-catalogue-ui-i18n
               mountPath: /app/node_modules/yargs/locales/en.json
               subPath: en.json
+            - name: consumer-catalogue-ui-astro
+              mountPath: /app/dist/server/pages/index.astro.mjs
+              subPath: index.astro.mjs
+            - name: consumer-catalogue-ui-astro
+              mountPath: /app/src/pages/index.astro
+              subPath: index.astro

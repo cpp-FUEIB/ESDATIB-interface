@@ -1,0 +1,13 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: consumer01
+generatorOptions:
+  disableNameSuffixHash: true
+
+# ConfigMaps para archivos Astro
+configMapGenerator:
+  - name: consumer-catalogue-ui-astro
+    files:
+      - index.astro.mjs=astro/catalogue-ui/index.astro.mjs
+      - index.astro=astro/catalogue-ui/index.astro

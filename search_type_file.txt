@@ -1,9 +1,12 @@
 for pod in $(kubectl get pods -n consumer01 -o jsonpath='{.items[*].metadata.name}'); do
   echo "🔍 Pod: $pod"
-  kubectl exec -n consumer01 "$pod" -- find / -name "*.html" 2>/dev/null
+  kubectl exec -n consumer01 "$pod" -- find / -name "*.vue" 2>/dev/null
 done | tee resultados_json.txt    
 
 
-kubectl exec -n consumer01 simpl-fe-usersroles-9d485b97c-lkcnq -- find / -name "*.html" 2>/dev/null | tee resultados_json.txt
+kubectl exec -n consumer01 catalogue-ui-5ff865c975-b9xzp -- find / -name "index*" 2>/dev/null | tee resultados_json.txt
 
-kubectl exec -n consumer01 catalogue-ui-5ff865c975-b9xzp -- cat /app/coverage/components/index.html
+kubectl exec -n consumer01 catalogue-ui-5ff865c975-b9xzp -- cat /app/dist/server/pages/index.astro.mjs
+
+/app/dist/server/pages/index.astro.mjs
+/app/src/pages/index.astro
