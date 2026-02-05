@@ -1,0 +1,39 @@
+
+🔍 Pod: simpl-fe-onboarding-56978cdfb6-d5mvl
+/usr/share/nginx/html/index.html
+/usr/share/nginx/html/onboarding/index.html
+/usr/share/nginx/html/simpl-shell/index.html
+/usr/share/nginx/html/sap/index.html
+/usr/share/nginx/html/identity-provider/index.html
+/usr/share/nginx/html/usersandroles/index.html
+/usr/share/nginx/html/participant-utility/index.html
+
+🔍 Pod: simpl-fe-participant-6fb9b85c74-p97qd
+/usr/share/nginx/html/index.html
+/usr/share/nginx/html/onboarding/index.html
+/usr/share/nginx/html/simpl-shell/index.html
+/usr/share/nginx/html/sap/index.html
+/usr/share/nginx/html/identity-provider/index.html
+/usr/share/nginx/html/usersandroles/index.html
+/usr/share/nginx/html/participant-utility/index.html
+
+
+🔍 Pod: simpl-fe-sap-8cb5bd98b-lgwz7
+/usr/share/nginx/html/index.html
+/usr/share/nginx/html/onboarding/index.html
+/usr/share/nginx/html/simpl-shell/index.html
+/usr/share/nginx/html/sap/index.html
+/usr/share/nginx/html/identity-provider/index.html
+/usr/share/nginx/html/usersandroles/index.html
+/usr/share/nginx/html/participant-utility/index.html
+
+
+
+🔍 Pod: simpl-fe-usersroles-59c86bcf78-md7ct
+/usr/share/nginx/html/index.html
+/usr/share/nginx/html/onboarding/index.html
+/usr/share/nginx/html/simpl-shell/index.html
+/usr/share/nginx/html/sap/index.html
+/usr/share/nginx/html/identity-provider/index.html
+/usr/share/nginx/html/usersandroles/index.html
+/usr/share/nginx/html/participant-utility/index.html

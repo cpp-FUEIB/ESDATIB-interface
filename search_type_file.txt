@@ -1,12 +1,16 @@
-for pod in $(kubectl get pods -n consumer01 -o jsonpath='{.items[*].metadata.name}'); do
+for pod in $(kubectl get pods -n authority01 -o jsonpath='{.items[*].metadata.name}'); do
   echo "🔍 Pod: $pod"
-  kubectl exec -n consumer01 "$pod" -- find / -name "*.vue" 2>/dev/null
+  kubectl exec -n authority01 "$pod" -- find / -name "*onboarding-entry*" 2>/dev/null
 done | tee resultados_json.txt    
 
 
-kubectl exec -n consumer01 catalogue-ui-5ff865c975-b9xzp -- find / -name "index*" 2>/dev/null | tee resultados_json.txt
+kubectl exec -n authority01 simpl-fe-onboarding-56978cdfb6-d5mvl -- find / -name "*.js" 2>/dev/null | tee resultados_json.txt
 
-kubectl exec -n consumer01 catalogue-ui-5ff865c975-b9xzp -- cat /app/dist/server/pages/index.astro.mjs
+kubectl exec -n authority01 simpl-fe-onboarding-56978cdfb6-d5mvl -- cat /usr/share/nginx/html/onboarding/main.0a5fe1b77bbf1cd2.js
 
-/app/dist/server/pages/index.astro.mjs
-/app/src/pages/index.astro
+
+
+
+kubectl exec -n authority01 simpl-fe-onboarding-56978cdfb6-d5mvl -- sh -c '
+find / -type f -name "*" 2>/dev/null -exec grep -l "app-onboarding-entry" {} \;
+' | tee resultados_json.txt
