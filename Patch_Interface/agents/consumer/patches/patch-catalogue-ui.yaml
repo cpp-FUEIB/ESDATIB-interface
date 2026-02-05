@@ -28,3 +28,7 @@ spec:
             - name: consumer-catalogue-ui-astro
               mountPath: /app/src/components/search/SearchTabs.vue
               subPath: SearchTabs.vue
+
+            - name: consumer-catalogue-ui-astro
+              mountPath: /app/src/components/search/AdvancedSearch.vue
+              subPath: AdvancedSearch.vue
