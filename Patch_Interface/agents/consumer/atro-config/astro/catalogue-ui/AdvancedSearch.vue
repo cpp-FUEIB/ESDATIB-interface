@@ -17,7 +17,7 @@
         v-model="selectedSchemaKey"
         id="search-schema"
         :options="schemas"
-        label="Resource type"
+        label="Selecciona un esquema de cerca"
         @change="selectShape"
       />
     </div>
@@ -42,7 +42,7 @@
           type="button"
           :disabled="!form.data || Object.keys(form.data).length === 0"
           @click="resetForm"
-          label="Clear parameters"
+          label="Neteja els paràmetres"
         />
         <SButton
           class="advanced-search-button"
@@ -52,7 +52,7 @@
           type="submit"
           :disabled="isSearchLoading || !searchData || Object.keys(searchData).length === 0"
           @submit.prevent="handleSearchSubmit"
-          label="Search"
+          label="Cerca"
         />
         <SLoadingSpinner v-if="isSearchLoading" class="search-loading ml-4" />
       </div>
@@ -61,7 +61,7 @@
       <SearchResults
         :result="result"
         v-if="showResults"
-        results-number-suffix="for the parameters:"
+        results-number-suffix="per als paràmetres:"
       >
         <template #details>
           <div class="flex flex-col gap-4">
